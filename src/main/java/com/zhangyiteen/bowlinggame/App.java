@@ -36,7 +36,9 @@ public class App
         for (int i : a) {
             bowling.roll(i);
         }
-        int score = bowling.getScore();    
-        System.out.println( score );
+
+        //int score = bowling.getScore();    
+        //System.out.println( score );
+        bowling.printOutScoreAll();
     }
 }

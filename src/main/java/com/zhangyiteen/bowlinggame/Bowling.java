@@ -15,6 +15,14 @@ public class Bowling {
         this.frames.add(new Frame());
     }
 
+    public void printOutScoreAll() {
+        System.out.println("frameId, Score");
+        for (int i = 0; i < 10; i++) {
+            System.out.printf( "%d, %d\n", i + 1, frames.get(i).getScore());
+        }
+        System.out.printf( "total: %d\n", getScore());
+    }
+    
     // get the total score
     public int getScore() {
         int score = 0;

@@ -47,4 +47,8 @@ public class Frame {
     public int getScore() {
         return this.score;
     }
+
+    protected int numberOfBonus() {
+        return needBonus;
+    }
 }
